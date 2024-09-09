@@ -26,7 +26,7 @@
   --oxford-blue-2: hsl(222, 44%, 14%);
   --oxford-blue-3: hsl(222, 50%, 11%);
   --sonic-silver: hsl(0, 0%, 44%);
-  --space-cadet: hsla(222, 43%, 18%, 0.549);
+  --space-cadet: hsl(222, 44%, 18%);
   --pastel-pink: hsl(1, 53%, 75%);
   --eerie-black: hsl(0, 0%, 15%);
   --light-gray: hsl(0, 0%, 80%);
@@ -101,8 +101,6 @@ img,
 span,
 button { display: block; }
 
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -150,7 +148,7 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px;  }
+.container { padding-inline: 16px; }
 
 .material-symbols-rounded {
   --fs: 1em;
@@ -160,20 +158,16 @@ body {
   overflow: hidden;
 }
 
-.bg-plan{
+.bg-plan {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  
-  
 }
 
 .has-bg-image {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-image: url(../images/hero-bg.png);
-  
+  background-position: left;
 }
 
 .section-subtitle {
@@ -287,7 +281,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
 }
 
 .has-scrollbar {
@@ -336,7 +329,7 @@ body {
   width: 100%;
   padding: 40px 15px;
   padding-inline-start: 40px;
-  z-index: 10;
+  z-index: 4;
 }
 
 .header .container {
@@ -376,7 +369,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 0.25s var(--cubic-out);
-  z-index: 0;
+  z-index: 2;
 }
 
 .navbar.active {
@@ -411,15 +404,13 @@ body {
   position: relative;
   padding-block-start: calc(var(--section-padding) + 70px);
   text-align: center;
-  z-index: 0;
-  background-color: var(--space-cadet);
+  z-index: 1;
   overflow: hidden;
 }
 
 .hero .container {
   display: grid;
   gap: 30px;
-  z-index: 8;
 }
 
 .hero .section-subtitle { text-transform: unset; }
@@ -438,7 +429,7 @@ body {
   bottom: 0;
   right: 0;
   width: 90%;
-  z-index: 10;
+  z-index: -1;
 }
 
 
@@ -678,8 +669,6 @@ body {
     max-width: 540px;
     width: 100%;
     margin-inline: auto;
-    opacity: 1;
-    z-index: 5;
   }
 
   .section-subtitle { --fs-5: 1.6rem; }
@@ -697,8 +686,6 @@ body {
   .hero-content {
     max-width: 520px;
     margin-inline: auto;
-    
-    
   }
 
   .hero .section-text { font-size: 1.8rem; }
