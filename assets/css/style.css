@@ -172,7 +172,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  background-color: var(--space-cadet);
   background-image: url(../images/hero-bg.png);
   
 }
