@@ -171,7 +171,7 @@ body {
 .has-bg-image {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-image: url(../images/hero-bg.png);
   
 }
